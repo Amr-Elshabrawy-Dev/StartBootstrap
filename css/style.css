@@ -1,19 +1,12 @@
-
+a {
+    color: inherit !important;
+}
 .header {
-    height: 100vh;
-    background-image:linear-gradient(#5c4d42cc, #5c4d42cc), url(../image/bg-masthead.jpg);
+    height: 100dvh;
+    background-image:linear-gradient(#5c4d42cc, #5c4d42cc), url(../image/bg-masthead.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-.header .navbar-brand {
-    font-size: 1.25rem;
-    color: #ffffffb3;
-    font-weight: 600;
-}
-.header .nav-link {
-    color: #ffffffb3;
-    font-weight: 600;
 }
 .header .head {
     font-size: 3.5rem;
@@ -25,19 +18,8 @@ hr {
     opacity: 1;
     border: none;
 }
-.text {
-    color: #ffffffbf;
+.fs-7 {
     font-size: 1.15rem;
-}
-.text-2 {
-    color: #6c757d;
-}
-.btn-all {
-    border-radius: 10rem !important;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.85rem;
-    padding: 1.25rem 2.25rem !important;
 }
 .py-8 {
     padding: 8rem 0;
@@ -55,14 +37,11 @@ main .img-fluid {
 .bg-img {
     background-color: #f4623ae6;
 }
-main .d-flex {
-    flex-direction: column;
-}
 main .cover {
-    display: none !important;
+    display: none;
 }
 main .link:hover .cover {
-    display: flex !important;
+    display: flex;
 }
 main form .data {
     border: 1px solid #d8d9da;
@@ -127,23 +106,29 @@ label {
         box-shadow: 1px 1px 5px 10px #ffffff3c;
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
     .header {
-        height: 40vh;
+        height: 70vh;
     }
     .header .head {
         font-size: 2.2rem;
-        padding: 0 2rem;
+    }
+    .fs-7 {
+        font-size: 1rem
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .header {
-        height: 40vh;
+        height: 40dvh;
+    }
+    .header .navbar-brand.fs-5 {
+        font-size: 1rem !important;
     }
     .header .head {
-        font-size: 2.2rem;
+        font-size: 1.3rem;
+        
     }
-    p, .text {
-        font-size: 0.7rem !important;
+    .fs-7 {
+        font-size: 0.7rem;
     }
 }
